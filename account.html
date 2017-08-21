@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> 故事集</title>
+    <!-- CSS -->
+    
+  </head>
+  <body>
+     <a href="index.html">返回上一个页面</html>
+  
+  </body>
+</html>
+<script>
+ var _saytext = decodeURI(" ");
+var pmpt_text;
+var err_tip = new Array("你输入的名字，权限不够！","别乱填，你以为输入别人名字就行了？","快填，别试了！你看不到此页面的","试不出来填空格就可以跳出循环了！《傻×》") 
+   pmpt_text = prompt("在下面输入框填“名字" + _saytext +"”");
+for ( i = 0; pmpt_text != _saytext; ++i)
+{
+if ( i == err_tip.length)
+{
+i = 0;
+window.history.back(-1);
+}
+alert(err_tip[i]);
+pmpt_text = prompt("快在下面输入框填“名字" + _saytext +"”");
+}
+	
+
+</script>
